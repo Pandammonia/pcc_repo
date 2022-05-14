@@ -1,8 +1,10 @@
 {% extends "learning_logs/base.html" %}
 
-{% block content %}
-
-<p>Learning Log helps you keep track of your learning, for any topic you're
-learning about.</p>
-
-{% endblock content %}
+{% block page_header %}
+ <div class="jumbotron">
+   <h1 class="display-3">Hi mom.</h1>
+   <p class="lead">I'm going to make something like this and upload different projects to it then put it online so its a sort of miniature website that doubles as a CV</p>
+ <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+ role="button">Register &raquo;</a>
+ </div>
+{% endblock page_header %}
